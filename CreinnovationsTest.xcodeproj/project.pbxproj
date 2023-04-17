@@ -13,6 +13,13 @@
 		96BD05CE29ED7E2900B62C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BD05CC29ED7E2900B62C72 /* Main.storyboard */; };
 		96BD05D029ED7E2B00B62C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BD05CF29ED7E2B00B62C72 /* Assets.xcassets */; };
 		96BD05D329ED7E2B00B62C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BD05D129ED7E2B00B62C72 /* LaunchScreen.storyboard */; };
+		96BD05DB29EDA64700B62C72 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05DA29EDA64700B62C72 /* HomeTableViewCell.swift */; };
+		96BD05DD29EDA76300B62C72 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05DC29EDA76300B62C72 /* Model.swift */; };
+		96BD05DF29EDAB2A00B62C72 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05DE29EDAB2A00B62C72 /* ThumbnailView.swift */; };
+		96BD05E129EDAC5700B62C72 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05E029EDAC5700B62C72 /* ThumbnailCollectionViewCell.swift */; };
+		96BD05E529EDC1D300B62C72 /* EditingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05E429EDC1D300B62C72 /* EditingPageViewController.swift */; };
+		96BD05E729EDCC6700B62C72 /* NewEditPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05E629EDCC6700B62C72 /* NewEditPageViewController.swift */; };
+		96BD05E929EDE04500B62C72 /* EditCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD05E829EDE04500B62C72 /* EditCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		96BD05CF29ED7E2B00B62C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BD05D229ED7E2B00B62C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96BD05D429ED7E2B00B62C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BD05DA29EDA64700B62C72 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		96BD05DC29EDA76300B62C72 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		96BD05DE29EDAB2A00B62C72 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		96BD05E029EDAC5700B62C72 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		96BD05E429EDC1D300B62C72 /* EditingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingPageViewController.swift; sourceTree = "<group>"; };
+		96BD05E629EDCC6700B62C72 /* NewEditPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEditPageViewController.swift; sourceTree = "<group>"; };
+		96BD05E829EDE04500B62C72 /* EditCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,13 @@
 				96BD05C829ED7E2900B62C72 /* SceneDelegate.swift */,
 				96BD05CA29ED7E2900B62C72 /* ViewController.swift */,
 				96BD05CC29ED7E2900B62C72 /* Main.storyboard */,
+				96BD05E429EDC1D300B62C72 /* EditingPageViewController.swift */,
+				96BD05E629EDCC6700B62C72 /* NewEditPageViewController.swift */,
+				96BD05E829EDE04500B62C72 /* EditCollectionViewCell.swift */,
+				96BD05DE29EDAB2A00B62C72 /* ThumbnailView.swift */,
+				96BD05E029EDAC5700B62C72 /* ThumbnailCollectionViewCell.swift */,
+				96BD05DC29EDA76300B62C72 /* Model.swift */,
+				96BD05DA29EDA64700B62C72 /* HomeTableViewCell.swift */,
 				96BD05CF29ED7E2B00B62C72 /* Assets.xcassets */,
 				96BD05D129ED7E2B00B62C72 /* LaunchScreen.storyboard */,
 				96BD05D429ED7E2B00B62C72 /* Info.plist */,
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BD05E929EDE04500B62C72 /* EditCollectionViewCell.swift in Sources */,
+				96BD05DD29EDA76300B62C72 /* Model.swift in Sources */,
+				96BD05E129EDAC5700B62C72 /* ThumbnailCollectionViewCell.swift in Sources */,
+				96BD05E529EDC1D300B62C72 /* EditingPageViewController.swift in Sources */,
 				96BD05CB29ED7E2900B62C72 /* ViewController.swift in Sources */,
+				96BD05E729EDCC6700B62C72 /* NewEditPageViewController.swift in Sources */,
 				96BD05C729ED7E2900B62C72 /* AppDelegate.swift in Sources */,
+				96BD05DF29EDAB2A00B62C72 /* ThumbnailView.swift in Sources */,
+				96BD05DB29EDA64700B62C72 /* HomeTableViewCell.swift in Sources */,
 				96BD05C929ED7E2900B62C72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
