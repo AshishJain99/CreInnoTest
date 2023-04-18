@@ -37,8 +37,17 @@ class NewEditPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = flowLayout
+        
+        
         slider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
         collectionView.reloadData()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ThumbnailCollectionViewCell.self, forCellWithReuseIdentifier: ThumbnailCollectionViewCell.identifier)
     }
     
     override func viewDidLayoutSubviews() {
@@ -87,20 +96,29 @@ class NewEditPageViewController: UIViewController {
         allSubCatImage1 = sub
     }
     
+    
 }
 
 extension NewEditPageViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(allSubCatImage1.count)
         return allSubCatImage1.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThumbnailCollectionViewCell.identifier, for: indexPath) as! ThumbnailCollectionViewCell
+        cell.setSubCatImage(SubCatLink: allSubCatImage1[indexPath.row].thumbnail!)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let cellWidth: CGFloat = 100.0
-            let cellHeight: CGFloat = 150.0
+        let cellWidth: CGFloat = collectionView.frame.width/5
+        let cellHeight: CGFloat = view.frame.height*0.1
             return CGSize(width: cellWidth, height: cellHeight)
         }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        setImage(img1: allSubCatImage1[indexPath.row].backlayer!, img2: allSubCatImage1[indexPath.row].frontlayer!)
+    }
 }
